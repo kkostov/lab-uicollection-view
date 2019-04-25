@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         myCollectionView.dataSource = self
         myCollectionView.delegate = self
         myCollectionView.register(TrailBlazerCell.self, forCellWithReuseIdentifier: "MyCell")
+        myCollectionView.register(TrailBlazerBCell.self, forCellWithReuseIdentifier: "MyBCell")
         myCollectionView.backgroundColor = UIColor.white
         
         return myCollectionView

@@ -15,17 +15,30 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as? TrailBlazerCell else {
-            return UICollectionViewCell()
-        }
-        
         let item = items[indexPath.row]
         
-        cell.hb_set(item)
+        if item.isActive {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyBCell", for: indexPath) as? TrailBlazerBCell else {
+                return UICollectionViewCell()
+            }
+            
+            cell.hb_set(item)
+            
+            cell.updateConstraintsIfNeeded()
+            
+            return cell
+        } else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as? TrailBlazerCell else {
+                return UICollectionViewCell()
+            }
+            
+            cell.hb_set(item)
+            
+            cell.updateConstraintsIfNeeded()
+            
+            return cell
+        }
         
-        cell.updateConstraintsIfNeeded()
-        
-        return cell
     }
     
     

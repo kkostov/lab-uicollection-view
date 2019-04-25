@@ -15,6 +15,7 @@
 		4B33FBCE227182B3000CEB65 /* ViewController+ UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FBCD227182B3000CEB65 /* ViewController+ UICollectionViewDelegate.swift */; };
 		4B33FBD022718598000CEB65 /* TrailBlazerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FBCF22718598000CEB65 /* TrailBlazerCell.swift */; };
 		4B33FBD222718930000CEB65 /* ViewController+FlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FBD122718930000CEB65 /* ViewController+FlowDelegate.swift */; };
+		4B33FBD42271905D000CEB65 /* TrailBalzerBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33FBD32271905D000CEB65 /* TrailBalzerBCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4B33FBCD227182B3000CEB65 /* ViewController+ UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		4B33FBCF22718598000CEB65 /* TrailBlazerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailBlazerCell.swift; sourceTree = "<group>"; };
 		4B33FBD122718930000CEB65 /* ViewController+FlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+FlowDelegate.swift"; sourceTree = "<group>"; };
+		4B33FBD32271905D000CEB65 /* TrailBalzerBCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailBalzerBCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				4B33FBCB22718298000CEB65 /* ViewController+ UICollectionViewDataSource.swift */,
 				4B33FBCD227182B3000CEB65 /* ViewController+ UICollectionViewDelegate.swift */,
 				4B33FBCF22718598000CEB65 /* TrailBlazerCell.swift */,
+				4B33FBD32271905D000CEB65 /* TrailBalzerBCell.swift */,
 				4B33FBC02271817E000CEB65 /* Assets.xcassets */,
 				4B33FBC22271817E000CEB65 /* LaunchScreen.storyboard */,
 				4B33FBC52271817E000CEB65 /* Info.plist */,
@@ -149,6 +152,7 @@
 				4B33FBD022718598000CEB65 /* TrailBlazerCell.swift in Sources */,
 				4B33FBCE227182B3000CEB65 /* ViewController+ UICollectionViewDelegate.swift in Sources */,
 				4B33FBD222718930000CEB65 /* ViewController+FlowDelegate.swift in Sources */,
+				4B33FBD42271905D000CEB65 /* TrailBalzerBCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
