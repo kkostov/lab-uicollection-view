@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     
     lazy var collectionLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-        layout.itemSize = CGSize(width: 60, height: 60)
+        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        layout.itemSize = UICollectionViewFlowLayout.automaticSize
         return layout
     }()
     
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         let myCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: collectionLayout)
         myCollectionView.dataSource = self
         myCollectionView.delegate = self
-        myCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
+        myCollectionView.register(TrailBlazerCell.self, forCellWithReuseIdentifier: "MyCell")
         myCollectionView.backgroundColor = UIColor.white
         
         return myCollectionView
@@ -33,12 +33,12 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
        
-        prepareData()
+        hb_prepareData()
         
         view.addSubview(collectionView)
     }
     
-    func prepareData() {
+    func hb_prepareData() {
         items.append(Item(id: "1", title: "hello", isActive: false))
         items.append(Item(id: "2", title: "I am active maybe", isActive: true))
         items.append(Item(id: "3", title: "I am active maybe", isActive: false))

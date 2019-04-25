@@ -11,6 +11,7 @@ import UIKit
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         items[indexPath.row].isActive = !items[indexPath.row].isActive
-        collectionView.reloadItems(at: [indexPath])
+        collectionView.reloadData()
     }
+    
 }

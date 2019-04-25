@@ -15,10 +15,15 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as? TrailBlazerCell else {
+            return UICollectionViewCell()
+        }
+        
         let item = items[indexPath.row]
         
-        cell.backgroundColor = item.isActive ? UIColor.blue : UIColor.red
+        cell.hb_set(item)
+        
+        cell.updateConstraintsIfNeeded()
         
         return cell
     }
